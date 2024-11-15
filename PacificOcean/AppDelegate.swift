@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        window.makeKeyAndVisible()
         coordinator.start(window: window)
 
-        AsincAwait()
+        Combine_2()
 
         return true
     }

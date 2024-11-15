@@ -25,6 +25,9 @@ packages:
   SnapKit:
     url: https://github.com/SnapKit/SnapKit.git
     from: 5.0.1
+  AppMetrica:
+    url: https://github.com/appmetrica/appmetrica-sdk-ios.git
+    from: 5.0.0
 
 targets:
   PacificOcaen:
@@ -44,3 +47,17 @@ targets:
     dependencies:
       - package: Lottie
       - package: SnapKit
+      - package: AppMetrica
+
+  Scrumdinder:
+    type: application
+    platform: iOS
+    deploymentTarget: 16.0
+    sources:
+      - path: ./Scrumdinder
+    info:
+      path: ./PacificOcean/info.plist
+      properties:
+        CFBundleDisplayName: "SCRUM"
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.pcfcocean
