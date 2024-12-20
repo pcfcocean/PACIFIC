@@ -27,12 +27,7 @@ class FibanachiSubscription<S: Subscriber>: Subscription where S.Input == Int {
     }
 
     func request(_ demand: Subscribers.Demand) {
-        switch demand {
-        case .none:
-            subscriber?.receive(completion: .finished)
-        case .unlimited:
-        case .max(let value):
-        }
+        print("demand", demand)
     }
 
     func cancel() {

@@ -12,7 +12,7 @@ settings:
     APP_VERSION: 1.0.0
     BUNDLE_VERSION: 1
     ENABLE_BITCODE: no
-    DISPLAY_NAME: "pcfcocean"
+    DISPLAY_NAME: "PACIFIC"
 
 appFonts: &app_Fonts [
   CustomFont.ttf
@@ -25,9 +25,9 @@ packages:
   SnapKit:
     url: https://github.com/SnapKit/SnapKit.git
     from: 5.0.1
-  AppMetrica:
+  AppMetricaCore:
     url: https://github.com/appmetrica/appmetrica-sdk-ios.git
-    from: 5.0.0
+    version: 5.5.0
 
 targets:
   PacificOcaen:
@@ -47,17 +47,4 @@ targets:
     dependencies:
       - package: Lottie
       - package: SnapKit
-      - package: AppMetrica
-
-  Scrumdinder:
-    type: application
-    platform: iOS
-    deploymentTarget: 16.0
-    sources:
-      - path: ./Scrumdinder
-    info:
-      path: ./PacificOcean/info.plist
-      properties:
-        CFBundleDisplayName: "SCRUM"
-    settings:
-      PRODUCT_BUNDLE_IDENTIFIER: com.pcfcocean
+      - package: AppMetricaCore

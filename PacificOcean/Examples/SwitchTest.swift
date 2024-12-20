@@ -21,4 +21,15 @@ struct SwitchTest {
         }
         print("--- выход из функции свитч()")
     }
+
+    func свитч2() {
+        let integer: Int = 410
+        switch integer {
+        case 400, 402, 404... :
+            print("--- 400, 402, 404...")
+        default :
+            print("--- integer")
+        }
+        print("--- выход из функции свитч2()")
+    }
 }

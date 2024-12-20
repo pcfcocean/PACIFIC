@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AppMetricaCore
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,7 +20,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
-
         let window = UIWindow(frame: UIScreen.main.bounds)
         self.window = window
 //
@@ -28,7 +28,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        window.makeKeyAndVisible()
         coordinator.start(window: window)
 
-        Combine_2()
+//        Combine_2()
+
+//        let appMetricaPACIFIC = AppMetricaPACIFIC()
+//        appMetricaPACIFIC.start()
+//        appMetricaPACIFIC.testData()
+
+        SwitchTest().свитч2()
 
         return true
     }
