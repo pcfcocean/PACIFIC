@@ -7,7 +7,9 @@
 
 import UIKit
 
+@MainActor
 class UIView1: UIView {}
+@MainActor
 class UIView2: UIView {}
 
 

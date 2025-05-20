@@ -34,7 +34,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        appMetricaPACIFIC.start()
 //        appMetricaPACIFIC.testData()
 
-        SwitchTest().свитч2()
+//        SwitchTest().свитч()
+//        Solution0003().lengthOfLongestSubstring("dvdf")
 
         return true
     }

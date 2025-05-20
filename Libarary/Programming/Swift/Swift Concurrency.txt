@@ -1,0 +1,3 @@
+Обновления в Swift Concurrency: что нас ждёт в Swift 6
+
+https://habr.com/ru/companies/yandex/articles/879078/
