@@ -44,3 +44,8 @@ git reset --soft HEAD^
 то не остается ничего другого, как сделать коммит, который отменяет какой-то коммит (sha1 коммита можно посмотреть командой git log),
 например:
 git revert sha1
+
+
+git config user.name pcfcpcean
+git config user.email "pcfcocean@icloud.com"
+

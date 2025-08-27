@@ -36,4 +36,16 @@ struct GuardTest {
         }
         print("--- Apple")
     }
+
+    func guardContinueTest() {
+        if true {
+            guard false else {
+                print("--- 2")
+                // continue /// continue' is only allowed inside a loop
+                return
+            }
+            print("--- 1")
+        }
+        print("--- 3")
+    }
 }

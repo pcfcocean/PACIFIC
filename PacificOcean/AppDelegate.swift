@@ -22,20 +22,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     ) -> Bool {
         let window = UIWindow(frame: UIScreen.main.bounds)
         self.window = window
-//
-//        let navigationController: UINavigationController = UINavigationController(rootViewController: ARCH.mvc.viewController)
-//        window.rootViewController = navigationController
-//        window.makeKeyAndVisible()
-        coordinator.start(window: window)
+        //
+        //        let navigationController: UINavigationController = UINavigationController(rootViewController: ARCH.mvc.viewController)
+        //        window.rootViewController = navigationController
+        //        window.makeKeyAndVisible()
+        
+        window.rootViewController = LoaderVC()
+        window.makeKeyAndVisible()
 
-//        Combine_2()
+        //        Combine_2()
 
-//        let appMetricaPACIFIC = AppMetricaPACIFIC()
-//        appMetricaPACIFIC.start()
-//        appMetricaPACIFIC.testData()
+        //        let appMetricaPACIFIC = AppMetricaPACIFIC()
+        //        appMetricaPACIFIC.start()
+        //        appMetricaPACIFIC.testData()
 
-//        SwitchTest().свитч()
-//        Solution0003().lengthOfLongestSubstring("dvdf")
+        //        SwitchTest().свитч()
+        //        Solution0003().lengthOfLongestSubstring("dvdf")
+//        Combine_3()
+//        Crashes()
 
         return true
     }

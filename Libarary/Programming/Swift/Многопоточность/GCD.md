@@ -22,3 +22,21 @@ https://shchukin-alex.medium.com/gcd-primitives-in-depth-serial-queue-c255cf98cf
 
 DispatchSemaphore in swift
 https://mobikul.com/dispatchsemaphore-in-swift/
+
+Многопоточность в iOS | GCD | Swift
+https://www.youtube.com/watch?v=gqLMd24EBAU
+
+Многопоточность в iOS | GCD | Target
+https://www.youtube.com/watch?v=KSfnsShNd6E
+
+Barrier | Swift | iOS | GCD | DispatchWorkItemFlags
+https://www.youtube.com/watch?v=y1h1T-TKIgo
+
+GCD iOS | DispatchQueue | AutoreleaseFrequency
+https://www.youtube.com/watch?v=5uhzK3AWdy4
+
+DispatchGroup | iOS | Swift
+https://www.youtube.com/watch?v=Sj8viajL8MM
+
+DispatchSemaphore | iOS | Swift | GCD | Семафор
+https://www.youtube.com/watch?v=E7Mwzf7vhjQ

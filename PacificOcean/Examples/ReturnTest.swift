@@ -15,4 +15,24 @@ struct ReturnTest {
     func apple() {
         print("--- яблочко ---")
     }
+
+    func switchProxyParamReturn(bool: Bool) -> String {
+        var stringVar: String
+        switch bool {
+        case true:
+            stringVar = "PRAVDA"
+        case false:
+            stringVar = "NE PRAVDA"
+        }
+        return stringVar
+    }
+
+    func switchDirectReturn(bool: Bool) -> String {
+        switch bool {
+        case true:
+            return "PRAVDA"
+        case false:
+            return "NE PRAVDA"
+        }
+    }
 }
