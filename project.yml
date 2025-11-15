@@ -1,4 +1,4 @@
-name: PacificOcean
+name: APPLE
 options:
   xcodeVersion: '15.0'
   minimumXcodeGenVersion: '2.25.0'
@@ -12,39 +12,41 @@ settings:
     APP_VERSION: 1.0.0
     BUNDLE_VERSION: 1
     ENABLE_BITCODE: no
-    DISPLAY_NAME: "PACIFIC"
+    DISPLAY_NAME: APPLE
 
 appFonts: &app_Fonts [
   CustomFont.ttf
 ]
 
 packages:
-  Lottie:
-    url: https://github.com/airbnb/lottie-spm.git
-    from: 4.4.3
   SnapKit:
     url: https://github.com/SnapKit/SnapKit.git
     from: 5.0.1
   AppMetricaCore:
     url: https://github.com/appmetrica/appmetrica-sdk-ios.git
     version: 5.5.0
+  Doca:
+    url: https://github.com/pcfcocean/doca.git
+    from: 1.0.0
+  MagicLayout:
+    url: https://github.com/pcfcocean/magic-layout.git
+    from: 1.0.0
 
 targets:
-  PacificOcaen:
+  MainTarget:
     type: application
     platform: iOS
     deploymentTarget: 16.0
     sources:
-      - path: ./PacificOcean
-      - path: ./DesignSystem
-      - path: ./Swift
+      - path: ./MainTarget
     info:
-      path: ./PacificOcean/info.plist
+      path: ./MainTarget/info.plist
       properties:
         CFBundleDisplayName: ${DISPLAY_NAME}
     settings:
       PRODUCT_BUNDLE_IDENTIFIER: com.pcfcocean
     dependencies:
-      - package: Lottie
       - package: SnapKit
       - package: AppMetricaCore
+      - package: Doca
+      - package: MagicLayout

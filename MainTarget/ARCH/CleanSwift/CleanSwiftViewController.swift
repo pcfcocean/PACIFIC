@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MagicLayout
 
 final class CleanSwiftViewController: UIViewController, CleanSwiftDisplayLogic {
     // MARK: - Constants

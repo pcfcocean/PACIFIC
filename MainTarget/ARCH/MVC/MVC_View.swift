@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MagicLayout
 
 public final class MVC_View: UIView {
     // MARK: - Constants
